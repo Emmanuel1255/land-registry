@@ -98,7 +98,7 @@ const Verification = () => {
     const fetchProperty = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:5004/api/properties/${propertyId}`, {
+        const response = await fetch(`https://land-registry-backend.onrender.com/api/properties/${propertyId}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -137,7 +137,7 @@ const Verification = () => {
 
         setCurrentVerificationData(verificationData);
 
-        const response = await fetch('http://localhost:5004/api/verification/submit', {
+        const response = await fetch('https://land-registry-backend.onrender.com/api/verification/submit', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -191,7 +191,7 @@ const Verification = () => {
       formData.append('signature', dataURLtoBlob(signatureData));
       formData.append('verificationData', JSON.stringify(currentVerificationData));
 
-      const response = await fetch(`http://localhost:5004/api/verification/${propertyId}/approve`, {
+      const response = await fetch(`https://land-registry-backend.onrender.com/api/verification/${propertyId}/approve`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

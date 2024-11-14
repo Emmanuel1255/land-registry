@@ -17,7 +17,7 @@ import { Card } from '@/components/common/Card'
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
 import PropertyImageUpload from '../../components/PropertyImageUpload'
 
-const API_URL = 'http://localhost:5004/api'
+const API_URL = 'https://land-registry-backend.onrender.com/api'
 
 const mapContainerStyle = {
     width: '100%',

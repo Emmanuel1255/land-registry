@@ -37,7 +37,7 @@ const PropertyDetails = () => {
                 return;
             }
 
-            const response = await fetch(`http://localhost:5004/api/properties/${id}`, {
+            const response = await fetch(`https://land-registry-backend.onrender.com/api/properties/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

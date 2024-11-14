@@ -23,7 +23,7 @@ const Profile = () => {
                 return
             }
 
-            const response = await fetch('http://localhost:5004/api/auth/profile', {
+            const response = await fetch('https://land-registry-backend.onrender.com/api/auth/profile', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

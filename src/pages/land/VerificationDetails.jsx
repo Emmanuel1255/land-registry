@@ -26,7 +26,7 @@ const VerificationDetails = () => {
     const fetchVerificationDetails = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:5004/api/verification/property/${propertyId}`, {
+            const response = await fetch(`https://land-registry-backend.onrender.com/api/verification/property/${propertyId}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -40,7 +40,7 @@ const VerificationDetails = () => {
             setVerification(data);
 
             // Fetch property details
-            const propertyResponse = await fetch(`http://localhost:5004/api/properties/${propertyId}`, {
+            const propertyResponse = await fetch(`https://land-registry-backend.onrender.com/api/properties/${propertyId}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

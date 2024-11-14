@@ -54,7 +54,7 @@ const Search = () => {
       }
 
       const response = await fetch(
-        `http://localhost:5004/api/properties/search?${queryParams.toString()}`,
+        `https://land-registry-backend.onrender.com/api/properties/search?${queryParams.toString()}`,
         {
           headers: {
             'Authorization': `Bearer ${token}`,

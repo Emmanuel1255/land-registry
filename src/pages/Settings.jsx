@@ -20,7 +20,7 @@ const Settings = () => {
     const fetchUserProfile = async () => {
         try {
             const token = localStorage.getItem('token')
-            const response = await fetch('http://localhost:5004/api/auth/profile', {
+            const response = await fetch('https://land-registry-backend.onrender.com/api/auth/profile', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -66,7 +66,7 @@ const Settings = () => {
     const handleUpdateProfile = async (values, { setSubmitting }) => {
         try {
             const token = localStorage.getItem('token')
-            const response = await fetch('http://localhost:5004/api/auth/profile', {
+            const response = await fetch('https://land-registry-backend.onrender.com/api/auth/profile', {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -94,7 +94,7 @@ const Settings = () => {
     const handlePasswordChange = async (values, { setSubmitting, resetForm }) => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5004/api/auth/change-password', {
+            const response = await fetch('https://land-registry-backend.onrender.com/api/auth/change-password', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -126,7 +126,7 @@ const Settings = () => {
     const handleNotificationSettings = async (values, { setSubmitting }) => {
         try {
             const token = localStorage.getItem('token')
-            const response = await fetch('http://localhost:5004/api/auth/notifications/settings', {
+            const response = await fetch('https://land-registry-backend.onrender.com/api/auth/notifications/settings', {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,
