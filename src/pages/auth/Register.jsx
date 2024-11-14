@@ -109,7 +109,7 @@ const Register = () => {
                       label="First Name"
                       name="firstName"
                       type="text"
-                      placeholder="John"
+                      placeholder="Khadija"
                       error={touched.firstName && errors.firstName}
                     />
                   </div>
@@ -118,7 +118,7 @@ const Register = () => {
                       label="Last Name"
                       name="lastName"
                       type="text"
-                      placeholder="Doe"
+                      placeholder="Jalloh"
                       error={touched.lastName && errors.lastName}
                     />
                   </div>
@@ -129,7 +129,7 @@ const Register = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  placeholder="john.doe@example.com"
+                  placeholder="dija@gmail.com"
                   error={touched.email && errors.email}
                 />
 

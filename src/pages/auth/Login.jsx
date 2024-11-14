@@ -65,7 +65,7 @@ const Login = () => {
           </div>
 
           {/* Demo Account Info */}
-          <div className="rounded-lg bg-blue-50 p-4 border border-blue-100">
+          {/* <div className="rounded-lg bg-blue-50 p-4 border border-blue-100">
             <div className="flex">
               <div className="flex-shrink-0">
                 <svg className="h-5 w-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -80,7 +80,7 @@ const Login = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <Formik
             initialValues={{ email: '', password: '' }}
@@ -158,14 +158,14 @@ const Login = () => {
                     Sign in
                   </Button>
 
-                  <Button
+                  {/* <Button
                     type="button"
                     onClick={handleDemoLogin}
                     className="w-full py-3 bg-green-600 hover:bg-green-700"
                     loading={loading && isSubmitting}
                   >
                     Try Demo Account
-                  </Button>
+                  </Button> */}
                 </div>
               </Form>
             )}
